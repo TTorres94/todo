@@ -32,7 +32,7 @@ const renderTodo = function(todos, filter){
     filteredTodo.forEach(function(todo){
 
        let p =  document.createElement('p');
-       p.textContent = todo.title;
+       p.textContent = `#${todo.title}`;
        $RENDERTODO.appendChild(p);
        
     })
@@ -54,7 +54,9 @@ $FORMCREATETODO.addEventListener('submit', function(e){
     e.preventDefault()
 
 
-    todos.push(`title: ${e.target.todoAddedForm.value}`)
+    todos.push({title:e.target.todoAddedForm.value})//quise pasar obj como string
+    
+    e.target.todoAddedForm.value = ''
 
     renderTodo(todos,filtered)
 })

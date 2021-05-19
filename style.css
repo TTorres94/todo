@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    background-color:papayawhip
+}
+
+input{
+    border:2px solid greenyellow;
+    border-radius:7px;
+}
+
+button{
+    background-color:whitesmoke;
+}
+
+
+.container{
+    margin: auto;
+    margin-top:100px;
+    height:400px;
+    width:400px;
+    border:3px solid burlywood;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
